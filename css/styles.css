@@ -127,7 +127,6 @@ body {
 .btn:active {
 	opacity: 0.6;
 }
-
 /* MEADIA */
 @media screen and (max-width: 760px) {
 	.site-link {
