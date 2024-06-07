@@ -171,6 +171,19 @@ body {
 	color: var(--search-color);
 }
 
+.form__select {
+	outline: none;
+	border: none;
+	padding: 1.8rem 2.4rem;
+	border-radius: 0.8rem;
+	cursor: pointer;
+	background-color: var(--white-color);
+	color: var(--text-color);
+	font-size: 1.4rem;
+	max-width: 200px;
+	width: 100%;
+}
+
 /* MEADIA */
 @media screen and (max-width: 760px) {
 	.site-link {
@@ -179,6 +192,17 @@ body {
 
 	.btn {
 		font-size: 1.4rem;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.form {
+		flex-direction: column;
+	}
+
+	.form__label {
+		margin-bottom: 4rem;
+		margin-right: 0;
 	}
 }
 
