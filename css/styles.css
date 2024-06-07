@@ -79,6 +79,28 @@ body {
 	margin: 0;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+ul,
+ol {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
 .container {
 	max-width: 1320px;
 	width: 100%;
@@ -184,13 +206,119 @@ body {
 	width: 100%;
 }
 
+.country-main {
+	padding-top: 4.8rem;
+}
+
+.country-main__list {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 3.5rem;
+}
+
+.country-main__item {
+	background-color: var(--white-color);
+	border-radius: 0.8rem;
+}
+
+.country-main__item img {
+	width: 100%;
+	border-radius: 0.8rem 0.8rem 0 0;
+}
+
+.country-main__info {
+	max-width: 120px;
+	width: 100%;
+	padding-left: 2.4rem;
+	padding-bottom: 4.6rem;
+}
+
+.country-main__link {
+	color: var(--text-color);
+	margin-bottom: 1.6rem;
+}
+
+.country-main__title {
+	font-weight: 800;
+	font-size: 1.8rem;
+}
+
+.country-main__text {
+	display: flex;
+	align-items: center;
+	color: var(--text-color);
+	font-weight: 300;
+}
+
+.country-main__text span {
+	font-weight: 600;
+}
+
 /* MEADIA */
+@media screen and (max-width: 1024px) {
+	.country-main__list {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
 @media screen and (max-width: 760px) {
 	.site-link {
 		font-size: 2rem;
 	}
 
 	.btn {
+		font-size: 1.4rem;
+	}
+
+	.country-main {
+		padding-top: 4rem;
+	}
+
+	.country-main__list {
+		gap: 2rem;
+	}
+
+	.country-main__item {
+		border-radius: 0.5rem;
+	}
+
+	.country-main__item img {
+		border-radius: 0.5rem 0.5rem 0 0;
+	}
+
+	.country-main__info {
+		padding-left: 2rem;
+		padding-bottom: 3rem;
+	}
+
+	.country-main__link {
+		margin-bottom: 1.4rem;
+	}
+
+	.country-main__title {
+		font-size: 1.6rem;
+	}
+
+	.country-main__text {
+		font-size: 1.2rem;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.country-main {
+		padding-top: 3rem;
+	}
+
+	.country-main__list {
+		grid-template-columns: repeat(2, 1fr);
+		gap: 1.6rem;
+	}
+
+	.country-main__info {
+		padding-left: 1.4rem;
+		padding-bottom: 2.4rem;
+	}
+
+	.country-main__title {
 		font-size: 1.4rem;
 	}
 }
@@ -203,6 +331,10 @@ body {
 	.form__label {
 		margin-bottom: 4rem;
 		margin-right: 0;
+	}
+
+	.country-main__list {
+		grid-template-columns: repeat(1, 1fr);
 	}
 }
 
